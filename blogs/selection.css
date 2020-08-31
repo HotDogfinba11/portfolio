@@ -233,6 +233,7 @@ ul.actions.fit.small li {
     -ms-flex-direction: row;
     flex-direction: row;
 	width: 100%;
+    padding: 10px;
 }
 
 .spotlights>section>.content {
