@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Olly's Portfolio | Photo Gallery</title>
+        <link rel="icon" type="image/png" href="../Images/Favicon.svg" sizes="16x16" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link rel="stylesheet" href="material-photo-gallery.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Product+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../blogs/selection.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css" />
+        <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
+		<style>
+			body {
+				text-align: center;
+			}
+			h2 {
+				margin: 4vh 4vw;
+                color: var(--text-color);
+			}
+            .button {
+                height:2em;
+                letter-spacing:0.1em;
+                line-height:2em;
+            }
+		</style>
+	</head>
+	<body>
+                <div class="menu-icon"><span class="menu-icon__line menu-icon__line-left"></span> <span class="menu-icon_line menu-icon__line"></span> <span class="menu-icon__line menu-icon__line-right"></span></div>
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="../index.html">Home</a></li>
+                    <li class="nav__list-item"><a href="../download.html">Downloads</a></li>
+                    <li class="nav__list-item"><a href="../blogs/selection.html">Blogs</a></li>
+                    <li class="nav__list-item"><a href="photography.html">Photography</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mode">
+            <input type="checkbox" id="checkbox" /> <label for="checkbox"><img src="Images/Dark.svg" /></label>
+        </div>
+        
+		<h2 style="font-weight: 400">Photo Gallery</h2>
+		<p>
+			<a href="https://alderbrook-my.sharepoint.com/:u:/g/personal/201oharrison15_alderbrooksixthform_org/EST8dxYcFKNNt6I-77HVnGUBUnXSsI4pGqttpFsqpg-GQA?e=Jrv2w7" class="button">Download</a>
+		</p>
+
+		<div class="m-p-g">
+			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+				<img src="../Images/Photography/Heidi-min.jpg" data-full="../Images/Photography/Heidi.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/River-plane-min.jpg" data-full="../Images/Photography/River-plane.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Beach-min.jpg" data-full="../Images/Photography/Beach.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Sea-reflection-min.jpg" data-full="../Images/Photography/Sea-reflection.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Brussels-min.jpg" data-full="../Images/Photography/Brussels.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Boats-min.jpg" data-full="../Images/Photography/Boats.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Ornament-min.jpg" data-full="../Images/Photography/Ornament.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Christmas-min.jpg" data-full="../Images/Photography/Christmas-min.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Hattie1-min.jpg" data-full="../Images/Photography/Hattie1.jpg" class="m-p-g__thumbs-img" />
+				<img src="../Images/Photography/Hattie2-min.jpg" data-full="../Images/Photography/Hattie2.jpg" class="m-p-g__thumbs-img" />
+                <img src="../Images/Photography/Kos-min.jpg" data-full="../Images/Photography/Kos.jpg" class="m-p-g__thumbs-img" />
+                <img src="../Images/Photography/Sky-min.jpg" data-full="../Images/Photography/Sky.jpg" class="m-p-g__thumbs-img" />
+                <img src="../Images/Photography/Island-min.jpg" data-full="../Images/Photography/Island.jpg" class="m-p-g__thumbs-img" />
+			</div>
+            
+			<div class="m-p-g__fullscreen"></div>
+		</div>
+        <script src="../dark.js"></script>
+		<script src="material-photo-gallery.js"></script>
+		<script>
+			var elem = document.querySelector('.m-p-g');
+
+			document.addEventListener('DOMContentLoaded', function() {
+				var gallery = new MaterialPhotoGallery(elem);
+			});
+		</script>
+	</body>
+</html>
