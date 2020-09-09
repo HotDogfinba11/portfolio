@@ -1,0 +1,1 @@
+const app=(()=>{let e,t,c;const s=(e,t)=>{e.classList.contains(t)?e.classList.remove(t):e.classList.add(t)};e=document.querySelector("body"),t=document.querySelector(".menu-icon"),c=document.querySelectorAll(".nav__list-item"),t.addEventListener("click",()=>s(e,"nav-active"))})();

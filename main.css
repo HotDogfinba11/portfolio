@@ -14,7 +14,9 @@
     --mark: #f2f2f2;
     --shadow: #545454;
 }
-[data-theme="dark"] {
+
+@media (prefers-color-scheme: dark){
+  :root {
     --bg-color: #000;
     --text-color: #fff;
     --light-grey: #dedede;
@@ -29,7 +31,9 @@
     --color2: #4e8a7d;
     --mark: #474747;
     --shadow: #171717;
+  }
 }
+
 html {
     box-sizing: border-box;
     font-family: Product Sans;
